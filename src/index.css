@@ -1,6 +1,18 @@
 :root {
   background-color: rgb(9, 9, 56);
   color: whitesmoke;
+  
+}
+
+
+h2 {
+  font-family: "Londrina Outline", sans-serif;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 5rem;
+}
+h1, h3 {
+  font-family: "Outfit", sans-serif;
 }
 
 

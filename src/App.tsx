@@ -3,6 +3,8 @@ import PersonalDetails from './components/PersonalDetails'
 import Socials from './components/Socials'
 import Modal from './components/Modal'
 import './App.css'
+import NavBar from './components/NavBar'
+import About_Me from './components/About_Me'
 
 
 function App() {
@@ -18,11 +20,12 @@ function App() {
         </section>
         
         <section className='scroll-section'>
-          <nav>
+          <NavBar>
             {/* this will be static */}
             {/* jobs and skills, projects, interests */}
-          </nav>
+          </NavBar>
           <div className='resume'>
+            <About_Me />
             {/* relevant jobs */}
             {/* transferable skills */}
             {/* projects */}
