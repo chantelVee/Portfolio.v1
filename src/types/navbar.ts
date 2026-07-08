@@ -1,5 +1,6 @@
 import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 
+
 export type BaseNavItem = {
     id: string;
     label: string;
@@ -17,3 +18,7 @@ export type IconNavItem = BaseNavItem & {
 };
 
 export type NavItem = ImageNavItem | IconNavItem;
+
+export type NavBarProps = {
+    isScrolled: boolean;
+};

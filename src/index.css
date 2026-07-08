@@ -1,5 +1,5 @@
 :root {
-  background-color: rgb(9, 9, 56);
+  background-color: rgb(6, 6, 37);
   color: whitesmoke;
   
 }
@@ -12,7 +12,7 @@ h2 {
   font-weight: 600;
   font-size: 5rem;
 }
-h1, h3, span {
+h1, h3, span, p {
   font-family: "Outfit", sans-serif;
 }
 
