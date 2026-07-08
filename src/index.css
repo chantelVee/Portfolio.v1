@@ -5,13 +5,14 @@
 }
 
 
+
 h2 {
   font-family: "Londrina Outline", sans-serif;
   margin-bottom: 0;
   font-weight: 600;
   font-size: 5rem;
 }
-h1, h3 {
+h1, h3, span {
   font-family: "Outfit", sans-serif;
 }
 
