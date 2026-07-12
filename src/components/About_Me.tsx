@@ -26,8 +26,8 @@ export default function About_Me({isScrolled}: AboutMeProps) {
     
      <div >
        
-        <h2 className='about-me-header'>About Me</h2>
-        <p className='about-me-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptates tempore earum eveniet, ratione fuga explicabo exercitationem omnis, qui mollitia cum eius. Facere quas velit eos esse magnam doloribus obcaecati quibusdam tenetur, laborum cumque, dolor recusandae asperiores maiores provident nihil ducimus, sit alias quae? Quae, velit! Illum libero rerum ullam consequatur dolores eos veniam, enim ratione labore iste quos deserunt inventore, in deleniti vitae? Quae laudantium itaque quaerat excepturi commodi, repellat optio molestiae . Laborum, consequuntur!</p>
+        <h2 className='header'>About Me</h2>
+        <p className='text-experience'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptates tempore earum eveniet, ratione fuga explicabo exercitationem omnis, qui mollitia cum eius. Facere quas velit eos esse magnam doloribus obcaecati quibusdam tenetur, laborum cumque, dolor recusandae asperiores maiores provident nihil ducimus, sit alias quae? Quae, velit! Illum libero rerum ullam consequatur dolores eos veniam, enim ratione labore iste quos deserunt inventore, in deleniti vitae? Quae laudantium itaque quaerat excepturi commodi, repellat optio molestiae . Laborum, consequuntur!</p>
     </div>
     </>
    

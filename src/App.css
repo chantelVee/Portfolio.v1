@@ -27,6 +27,7 @@
   border-radius: 10px;
   left: 25rem;
   border: whitesmoke solid;
+  cursor: pointer;
 }
 
 #buttons {
@@ -121,14 +122,20 @@ textarea {
 
 /* Social buttons */
 #socials {
+  display: flex;
+  list-style: none;
   width: fit-content;
-  top: 12rem;
+  top: 11rem;
   position: relative;
   border: whitesmoke 2px solid;
   border-radius: 10px;
   padding: .5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   left: 7rem;
+}
+#socials svg, h4 a {
+  color: whitesmoke;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 
@@ -169,7 +176,7 @@ textarea {
   font-size: 25px;
 }
 
-img {
+.nav-avatar {
   width: 1.5rem;
   border-radius: 50%;
   border: whitesmoke solid 3px;
@@ -181,6 +188,7 @@ img {
   text-align: center;
 }
 .tooltip-text {
+  background-color: rgb(6, 6, 37);
   font-weight: 300;
   font-size: 15px;
   width: 80px;
@@ -204,7 +212,7 @@ img {
 .nav-link:hover svg, .nav-link:hover .nav-avatar {
   transform: scale(1.05);
 }
-/* about me */
+/* image animation*/
 .profile-img{
   top: 8rem;
   position: relative;
@@ -213,6 +221,7 @@ img {
 }
 #main-Img {
   width: 350px;
+  border-radius: 50%;
   border: whitesmoke solid 10px;
   overflow-anchor: 'none';
   display: flex;
@@ -226,11 +235,97 @@ motion.img {
   border-radius: 16px;
   object-fit: cover;
 }
-.about-me-header, .about-me-text {
+
+/*  about me  */
+.header, .text-experience, .sub-title, .company, .project-details, .tech-icons, .contact {
   top:8rem;
   position: relative;
   padding: 0 3rem;
 }
-.about-me-text {
+.text {
   line-height: 25px;
+  op: 1rem;
+    padding: 0 1.5rem;
+}
+
+/* Experience */
+
+.tech {
+  width: 590px;
+  margin: 0 auto 4rem;
+  position: relative;
+  justify-content: space-evenly;
+  top: 9rem;
+  display: flex;
+  list-style: none;
+}
+.tech li {
+  border: solid whitesmoke;
+  padding: 0.5rem;
+  border-radius: 50px;
+  font-size: x-large;
+}
+.tech .tooltip-text {
+  color: whitesmoke;
+}
+
+/* Projects */
+.title-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto 1.5rem;
+}
+.github-repo {
+    height: 50px;
+    top: 1rem;
+    position: relative;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    width: 70px;
+}
+.project-details {
+  margin-bottom: 2rem;
+}
+.project-images {
+  display: flex;
+  justify-content: space-around;
+}
+.project-img {
+  width: 100px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.lightbox-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+.lightbox-img {
+  z-index: 2000;
+  position: relative;
+  bottom: 25rem;
+  right: 20rem;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* contact */
+.contact {
+  margin: 4rem auto;
+}
+.contact-wrapper {
+  padding: 2rem;
+  text-align: center;
+}
+.contact-wrapper p {
+  padding: 1rem 5rem;
 }

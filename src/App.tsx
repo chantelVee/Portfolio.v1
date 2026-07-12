@@ -6,6 +6,11 @@ import Modal from './components/Modal'
 import './App.css'
 import NavBar from './components/NavBar'
 import About_Me from './components/About_Me'
+import CareerHistory from './components/CareerHistory';
+import Education from './components/Education';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+
 
 
 function App() {
@@ -34,15 +39,14 @@ function App() {
         
         <section className='scroll-section'>
           <NavBar isScrolled={isScrolled} />
-            {/* this will be static */}
-            {/* jobs and skills, projects, interests */}
+            
           
           <div className='resume'>
             <About_Me isScrolled={isScrolled} />
-            {/* relevant jobs */}
-            {/* transferable skills */}
-            {/* projects */}
-            {/* interests */}
+            <CareerHistory />
+            <Education />
+            <Projects/>
+            <Contact />
           </div>
         </section>
       </div>
