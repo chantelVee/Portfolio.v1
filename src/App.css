@@ -7,25 +7,24 @@
 
 /************ static section ************/
 .static-section {
-  width: 50%;
+  width: 40%;
   height: 100%;
   position: fixed;
 }
 .personal-details {
-  width: 65%;
+  width: 80%;
   margin: 0 auto;
   position: relative;
- 
 }
 
 #cv-download {
   color: whitesmoke;
-  top: 3rem;
+  top: 5rem;
   position: relative;
   background-color: transparent;
   padding: 1rem;
   border-radius: 10px;
-  left: 25rem;
+  left: 20rem;
   border: whitesmoke solid;
   cursor: pointer;
 }
@@ -95,6 +94,7 @@ input {
   margin: 0 2rem 2rem;
   display: flex;
 }
+
 form p {
   margin-bottom: 0;
   padding: 0 1.5rem ;
@@ -131,7 +131,7 @@ textarea {
   border-radius: 10px;
   padding: .5rem;
   font-size: 2rem;
-  left: 7rem;
+  left: 3rem;
 }
 #socials svg, h4 a {
   color: whitesmoke;
@@ -143,18 +143,19 @@ textarea {
 .scroll-section {
   position: absolute;
   right: 0;
-  width: 50%;
+  width: 60%;
   height: 100vh;
   display:grid;
 }
 
 /* nav bar */
 .nav-bar-container {
-  width: 630px;
+  width: inherit;
   background-color: rgb(6, 6, 37);
   margin: -0.5rem auto;
   position: fixed;
   z-index: 100;
+  right: 0;
 }
 .nav-bar-contents {
   justify-content: space-evenly ;
@@ -214,7 +215,7 @@ textarea {
 }
 /* image animation*/
 .profile-img{
-  top: 8rem;
+  top: 9rem;
   position: relative;
   width: fit-content;
    margin: 0 auto;
@@ -238,9 +239,9 @@ motion.img {
 
 /*  about me  */
 .header, .text-experience, .sub-title, .company, .project-details, .tech-icons, .contact {
-  top:8rem;
+  top:14rem;
   position: relative;
-  padding: 0 3rem;
+  padding: 0 6rem;
 }
 .text {
   line-height: 25px;
@@ -282,6 +283,7 @@ motion.img {
     padding: 0.5rem;
     font-size: 1.5rem;
     width: 70px;
+    cursor: pointer;
 }
 .project-details {
   margin-bottom: 2rem;
@@ -327,5 +329,5 @@ motion.img {
   text-align: center;
 }
 .contact-wrapper p {
-  padding: 1rem 5rem;
+  padding: 2rem 6rem;
 }
