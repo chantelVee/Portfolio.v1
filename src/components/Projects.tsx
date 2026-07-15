@@ -53,7 +53,25 @@ export default function Projects() {
 
   return (
     <>
-    <div className='projects'>
+    <motion.div className='projects'
+      initial="hidden"
+        whileInView="visible"
+        viewport={{once: true, amount: 0.25}}
+        variants={{
+            hidden: {
+                opacity: 0,
+                y: 100
+            },
+            visible: {
+                opacity: 1,
+                y: 30,
+                transition: {
+                    duration: 7,
+                    ease: "easeIn"
+                }
+            }
+        }}
+    >
         <h2 className="header">Projects</h2>
         {PROJECTS_DATA.map((project, projectIndex) => (
             <div key={project.id} className="project-details">
@@ -83,7 +101,7 @@ export default function Projects() {
                 <p className='text'>{project.description}</p>
             </div>
         ))}
-    </div>
+    </motion.div>
     <TechIcons />
 
     <AnimatePresence>

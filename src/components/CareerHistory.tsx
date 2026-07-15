@@ -1,6 +1,7 @@
 import { faCss3Alt, faHtml5, faReact, faSquareJs } from "@fortawesome/free-brands-svg-icons"
 import type { IconTechItem } from "../types/career-history"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { motion } from "framer-motion"
 
 export default function CareerHistory() {
 
@@ -12,7 +13,25 @@ export default function CareerHistory() {
      
   ]
   return (
-    <>
+    <motion.div
+      initial="hidden"
+        whileInView="visible"
+        viewport={{once: true, amount: 0.25}}
+        variants={{
+            hidden: {
+                opacity: 0,
+                y: 100
+            },
+            visible: {
+                opacity: 1,
+                y: 30,
+                transition: {
+                    duration: 7,
+                    ease: "easeIn"
+                }
+            }
+        }}
+    >
       <h2 className="header">Career History</h2>
       <h1 className="sub-title">Relevant Experience</h1>
       <div className="company">
@@ -33,6 +52,6 @@ export default function CareerHistory() {
       </ul>
       <h1 className="sub-title">Past Experience</h1>
       <p className="text-experience">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque, sequi repellendus nulla, id ullam qui quaerat repellat modi debitis consequatur veniam assumenda quisquam excepturi cum sapiente cupiditate, pariatur enim. Odio, ullam alias exercitationem corporis vero debitis hic voluptatum cumque. Asperiores repudiandae porro doloribus numquam doloremque omnis hic quos at.</p>
-    </>
+    </motion.div>
   )
 }

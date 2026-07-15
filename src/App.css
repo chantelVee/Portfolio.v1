@@ -7,25 +7,34 @@
 
 /************ static section ************/
 .static-section {
-  width: 40%;
+  width: 39%;
+  background-color: hotpink;
   height: 100%;
   position: fixed;
 }
 .personal-details {
-  width: 80%;
+  width: 81%;
   margin: 0 auto;
+  position: relative;
+}
+.personal-details h2 {
+  position: relative;
+  left: 9rem;
+}
+.personal-details h1, .personal-details h3 {
+  top: 3rem;
   position: relative;
 }
 
 #cv-download {
   color: whitesmoke;
-  top: 5rem;
+  top: 7rem;
   position: relative;
   background-color: transparent;
   padding: 1rem;
   border-radius: 10px;
   left: 20rem;
-  border: whitesmoke solid;
+  border: whitesmoke solid 4px;
   cursor: pointer;
 }
 
@@ -41,7 +50,7 @@ button {
   border: whitesmoke solid;
 }
 
-#cv-download:active, button:active {
+#cv-download:hover, #cv-download:active, button:hover, button:active {
   background-color: whitesmoke;
   color: rgb(9, 9, 56);
 }
@@ -61,7 +70,7 @@ button {
 .modal {
   margin: 3rem auto;
   border: whitesmoke solid 2px;
-  background-color: rgb(9, 9, 56);
+  background-color: hotpink;
   border-radius: 10px;
   
   
@@ -69,7 +78,7 @@ button {
 form {
   border-radius: 10px;
   font-family: "Outfit", sans-serif;
-  background-color: rgb(9, 9, 56);
+  background-color: hotpink;
   width: 455px;
   height: 70vh;
   padding: 1rem;
@@ -80,12 +89,14 @@ form {
   scrollbar-width: thin;
 }
 input {
-  margin:0 auto 1rem;
+  margin: 0.5rem auto;
   height: 2rem;
   font-size: 1rem;
   padding: 0.5rem;
   border-radius: 10px;
-  width: 400px;
+}
+.input-wrapper input {
+  width: 95%;
 }
 .name {
   margin-top: 1rem;
@@ -104,13 +115,12 @@ form p {
   width: 401px;
   margin: 0.5rem auto;
 }
-.radio input {
+.radio-options input {
   color: whitesmoke;
   margin: 0;
   width: 20px;
 }
-label {
-  margin-right: 3rem;
+label input {
   bottom: 0.7rem;
   position: relative;
   padding-left: 0.5rem;
@@ -127,14 +137,14 @@ textarea {
   width: fit-content;
   top: 11rem;
   position: relative;
-  border: whitesmoke 2px solid;
+  border: black 4px solid;
   border-radius: 10px;
   padding: .5rem;
   font-size: 2rem;
   left: 3rem;
 }
 #socials svg, h4 a {
-  color: whitesmoke;
+  color: black;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -151,7 +161,7 @@ textarea {
 /* nav bar */
 .nav-bar-container {
   width: inherit;
-  background-color: rgb(6, 6, 37);
+  background-color: whitesmoke;
   margin: -0.5rem auto;
   position: fixed;
   z-index: 100;
@@ -189,7 +199,8 @@ textarea {
   text-align: center;
 }
 .tooltip-text {
-  background-color: rgb(6, 6, 37);
+  background-color: whitesmoke;
+  color: rgb(161, 19, 90);
   font-weight: 300;
   font-size: 15px;
   width: 80px;
@@ -206,12 +217,14 @@ textarea {
 .nav-link:focus-visible .tooltip-text {
   visibility: visible;
   opacity: 1;
+  
 }
 .nav-link svg, .nav-link .nav-avatar {
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .nav-link:hover svg, .nav-link:hover .nav-avatar {
   transform: scale(1.05);
+  color: hotpink;
 }
 /* image animation*/
 .profile-img{
@@ -223,7 +236,7 @@ textarea {
 #main-Img {
   width: 350px;
   border-radius: 50%;
-  border: whitesmoke solid 10px;
+  border: hotpink inset 8px;
   overflow-anchor: 'none';
   display: flex;
   justify-content: center;
@@ -238,14 +251,22 @@ motion.img {
 }
 
 /*  about me  */
-.header, .text-experience, .sub-title, .company, .project-details, .tech-icons, .contact {
-  top:14rem;
+.header, .sub-title, .company, .project-details, .tech-icons, .contact {
+  top: 14rem;
+  text-align: end;
   position: relative;
-  padding: 0 6rem;
+  padding: 0 5rem;
+}
+.text-experience {
+  top: 14rem;
+  text-align: end;
+  position: relative;
+  width: 520px;
+  left: 9rem;
 }
 .text {
   line-height: 25px;
-  op: 1rem;
+  top: 2rem;
     padding: 0 1.5rem;
 }
 
@@ -253,30 +274,33 @@ motion.img {
 
 .tech {
   width: 590px;
-  margin: 0 auto 4rem;
+  margin: 1rem auto 2rem;
   position: relative;
   justify-content: space-evenly;
-  top: 9rem;
+  top: 14rem;
   display: flex;
   list-style: none;
 }
 .tech li {
-  border: solid whitesmoke;
+  border: solid black;
   padding: 0.5rem;
   border-radius: 50px;
   font-size: x-large;
 }
 .tech .tooltip-text {
-  color: whitesmoke;
+  color: black;
 }
 
 /* Projects */
 .title-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin: 2rem auto 1.5rem;
 }
 .github-repo {
+  color: hotpink;
+  border: hotpink solid 4px;
+  margin-left: 1rem;
     height: 50px;
     top: 1rem;
     position: relative;
@@ -291,6 +315,9 @@ motion.img {
 .project-images {
   display: flex;
   justify-content: space-around;
+  width: 510px;
+  left: 7rem;
+  position: relative;
 }
 .project-img {
   width: 100px;
@@ -311,7 +338,7 @@ motion.img {
 .lightbox-img {
   z-index: 2000;
   position: relative;
-  bottom: 25rem;
+  bottom: 78rem;
   right: 20rem;
   max-width: 100%;
   max-height: 100%;
@@ -328,6 +355,12 @@ motion.img {
   padding: 2rem;
   text-align: center;
 }
+.contact-wrapper h1 {
+  color: hotpink;
+}
 .contact-wrapper p {
   padding: 2rem 6rem;
+}
+.contact-wrapper a {
+  color: hotpink;
 }
