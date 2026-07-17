@@ -25,7 +25,7 @@ export default function PersonalDetails({onOpenModal}: {onOpenModal: () => void}
         animate={{opacity: 1, scale: 1}}
         transition={{
           duration: 5,
-          delay: 3,
+          delay: 5,
           ease: [0, 0.71, 0.2, 1.01],
         }}
         onClick={onOpenModal}>

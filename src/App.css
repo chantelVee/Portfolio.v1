@@ -7,23 +7,28 @@
 
 /************ static section ************/
 .static-section {
-  width: 39%;
+  width: 35%;
   background-color: hotpink;
-  height: 100%;
+  height: 97%;
   position: fixed;
+  border-radius: 30px;
 }
 .personal-details {
-  width: 81%;
+  width: 90%;
   margin: 0 auto;
   position: relative;
 }
 .personal-details h2 {
   position: relative;
-  left: 9rem;
+  left: 10rem;
+}
+.personal-details h1 {
+  color: whitesmoke;
 }
 .personal-details h1, .personal-details h3 {
   top: 3rem;
   position: relative;
+  left: 2rem;
 }
 
 #cv-download {
@@ -33,7 +38,7 @@
   background-color: transparent;
   padding: 1rem;
   border-radius: 10px;
-  left: 20rem;
+  left: 16rem;
   border: whitesmoke solid 4px;
   cursor: pointer;
 }
@@ -62,6 +67,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +78,7 @@ button {
   border: whitesmoke solid 2px;
   background-color: hotpink;
   border-radius: 10px;
+  padding-bottom: 3rem;
   
   
 }
@@ -110,31 +117,76 @@ form p {
   margin-bottom: 0;
   padding: 0 1.5rem ;
 }
-.radio {
-  height: 27px;
-  width: 401px;
-  margin: 0.5rem auto;
+
+.form-actions {
+  margin: 2rem auto 2rem;
+  top: 9rem;
+  position: relative;
 }
-.radio-options input {
-  color: whitesmoke;
+
+.radio-group {
+  margin-top: 1.5rem;
+  height: 3rem;
+}
+.radio-options.specific-roles {
+  height: 1.5rem;
+}
+.radio-group.follow-up {
+  top: 2rem;
+  position: relative;
+  height: 2rem;
+}
+.radio-group.follow-up legend {
+  bottom: 2rem;
+  position: relative;
+  width: 313px;
+}
+
+.radio-options label {
+  display: inline-flex;
+  color: black;
   margin: 0;
   width: 20px;
+  padding-right: 4rem;
+}
+.radio-options.follow-up-answers {
+  height: 1.5rem;
+  bottom: 2rem;
+  position: relative;
 }
 label input {
   bottom: 0.7rem;
   position: relative;
   padding-left: 0.5rem;
 }
+.textarea-wrapper {
+  top: 7rem;
+  position: relative;
+}
 textarea {
   height: 100px;
   margin: 1rem 1rem;
+  
+}
+
+.modal-content.text-center {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+.confirmation-form-actions {
+  top: 3rem;
+  position: relative;
+  width: 500px;
+  margin: 0 auto 2rem;
+  right: 5rem;
 }
 
 /* Social buttons */
 #socials {
   display: flex;
   list-style: none;
-  width: fit-content;
+  width: 100px;
   top: 11rem;
   position: relative;
   border: black 4px solid;
@@ -142,6 +194,7 @@ textarea {
   padding: .5rem;
   font-size: 2rem;
   left: 3rem;
+  justify-content: space-around;
 }
 #socials svg, h4 a {
   color: black;
@@ -190,7 +243,7 @@ textarea {
 .nav-avatar {
   width: 1.5rem;
   border-radius: 50%;
-  border: whitesmoke solid 3px;
+  border: hotpink inset 3.5px;
 }
 .tooltip-wrap {
   position: relative;
@@ -259,15 +312,17 @@ motion.img {
 }
 .text-experience {
   top: 14rem;
-  text-align: end;
+  text-align: justify;
   position: relative;
   width: 520px;
   left: 9rem;
 }
 .text {
   line-height: 25px;
+  position: relative;
   top: 2rem;
-    padding: 0 1.5rem;
+  padding: 0 1.5rem;
+  text-align: justify;
 }
 
 /* Experience */

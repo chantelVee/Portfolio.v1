@@ -20,7 +20,7 @@ export default function About_Me({isScrolled}: AboutMeProps) {
                 onAnimationComplete={() => setIsFirstLoad(false)}
                 transition={isFirstLoad ? {
                     duration: 3,
-                    delay: 1,
+                    delay: 3,
                     ease: [0, 0.71, 0.2, 1.01],
 
                     layout: {
