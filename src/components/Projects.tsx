@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion"; 
-import TechIcons from "./techIcons";
+import TechIcons from "./TechIcons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodeFork } from "@fortawesome/free-solid-svg-icons";
 import type { Project } from "../types/projects";
@@ -8,9 +8,9 @@ import type { Project } from "../types/projects";
 const PROJECTS_DATA: Project[] = [
     {
         id: "boutique-dashboard",
-        title: "Boutique Dashboard App",
+        title: "Boutique Dashboard Web Application",
         githubUrl: "https://github.com/chantelVee/Boutique-Dashboard-App/tree/development",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ullam tempore ipsum deserunt, eius iusto totam quae aspernatur repellat sed facilis dolorum, saepe dolor provident aperiam consequatur porro nobis incidunt recusandae culpa. Fugit eum quae officiis hic, nisi laudantium quidem veritatis libero porro voluptas accusantium ducimus similique tempore, quos itaque obcaecati? Similique .",
+        description: "A full-stack dashboard engineered to handle complex workflows and data management. Built utilizing React for a seamless, interactive frontend experience and Mongoose for robust data modeling. This project demonstrates my ability to design multi-step processes, manage version control effectively with Git, and deliver scalable solutions tailored to user needs.",
         images: [
             "src/assets/placeholder.jpg",
             "src/assets/placeholder.jpg",
@@ -99,10 +99,13 @@ export default function Projects() {
                     ))}
                 </div>
                 <p className='text'>{project.description}</p>
+                <TechIcons />
+                
             </div>
+            
         ))}
     </motion.div>
-    <TechIcons />
+    
 
     <AnimatePresence>
         {activeImage !== null && (

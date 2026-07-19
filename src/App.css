@@ -7,7 +7,7 @@
 
 /************ static section ************/
 .static-section {
-  width: 35%;
+  width: 38%;
   background-color: hotpink;
   height: 97%;
   position: fixed;
@@ -310,12 +310,20 @@ motion.img {
   position: relative;
   padding: 0 5rem;
 }
+.header {
+  color: hotpink;
+  right: 2rem;
+}
+.sub-title, .company {
+  right: 4rem;
+}
 .text-experience {
   top: 14rem;
   text-align: justify;
   position: relative;
-  width: 520px;
+  width: 500px;
   left: 9rem;
+  line-height: 1.5;
 }
 .text {
   line-height: 25px;
@@ -337,7 +345,7 @@ motion.img {
   list-style: none;
 }
 .tech li {
-  border: solid black;
+  border: solid hotpink;
   padding: 0.5rem;
   border-radius: 50px;
   font-size: x-large;
@@ -348,6 +356,8 @@ motion.img {
 
 /* Projects */
 .title-wrap {
+  right: 2rem;
+  position: relative;
   display: flex;
   justify-content: flex-end;
   margin: 2rem auto 1.5rem;
@@ -371,7 +381,7 @@ motion.img {
   display: flex;
   justify-content: space-around;
   width: 510px;
-  left: 7rem;
+  left: 5rem;
   position: relative;
 }
 .project-img {

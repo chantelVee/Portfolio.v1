@@ -13,7 +13,7 @@ const FORM_FIELDS: FormField[] = [
 ];
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/chantel-boiro/";
-const CV_URL = "/Chantel_Boiro-CV.docx"
+const CV_URL = "/ChantelBoiroCV.docx"
 
 export default function Modal({onClose} : ModalProps)  {
     const formRef = useRef<HTMLFormElement>(null);
@@ -37,7 +37,7 @@ export default function Modal({onClose} : ModalProps)  {
 
             const link = document.createElement("a");
             link.href = CV_URL;
-            link.download = "Chantel_Boiro-CV.docx";
+            link.download = "ChantelBoiroCV.docx";
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
