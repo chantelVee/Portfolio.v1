@@ -1,5 +1,7 @@
 /* Portfolio */
-
+html {
+  scroll-behavior: smooth;
+}
 .Portfolio {
   display: flex;
  width: 100%;
@@ -331,18 +333,24 @@ motion.img {
   top: 2rem;
   padding: 0 1.5rem;
   text-align: justify;
+  width: 500px;
+  left: 3rem;
 }
 
 /* Experience */
 
 .tech {
-  width: 590px;
+  width: 500px;
   margin: 1rem auto 2rem;
   position: relative;
   justify-content: space-evenly;
   top: 14rem;
   display: flex;
   list-style: none;
+  left: 3rem;
+}
+.project-tech {
+  top: 2rem
 }
 .tech li {
   border: solid hotpink;
@@ -360,7 +368,7 @@ motion.img {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  margin: 2rem auto 1.5rem;
+  margin: 4rem auto 1.5rem;
 }
 .github-repo {
   color: hotpink;
@@ -386,8 +394,10 @@ motion.img {
 }
 .project-img {
   width: 100px;
+  height: 80px;
   border-radius: 15px;
   cursor: pointer;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .lightbox-overlay {
@@ -403,18 +413,19 @@ motion.img {
 .lightbox-img {
   z-index: 2000;
   position: relative;
-  bottom: 78rem;
+  bottom: 69rem;
   right: 20rem;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   border-radius: 25px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.562);
 }
 
 /* contact */
 .contact {
   margin: 4rem auto;
+  top: 20rem
 }
 .contact-wrapper {
   padding: 2rem;
@@ -429,3 +440,5 @@ motion.img {
 .contact-wrapper a {
   color: hotpink;
 }
+
+/* ******* responsive ********** */

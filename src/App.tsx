@@ -42,11 +42,22 @@ function App() {
             
           
           <div className='resume'>
-            <About_Me isScrolled={isScrolled} />
-            <CareerHistory />
-            <Education />
-            <Projects/>
-            <Contact />
+            <section id="about">
+              <About_Me isScrolled={isScrolled} />
+            </section>
+            <section id="employment">
+              <CareerHistory />
+            </section>
+            <section id="education">
+              <Education />
+            </section>
+            <section id="projects">
+              <Projects/>
+            </section>
+            <section id="contact">
+              <Contact />
+            </section>
+            
           </div>
         </section>
       </div>

@@ -1,3 +1,4 @@
+import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import type { ReactNode } from "react";
 
 export type BtnProp = {
@@ -15,5 +16,12 @@ export type Project = {
     githubUrl: string;
     description: string;
     images: string[];
+    icons: {
+      id: string;
+      label: string;
+      type: "icon";
+      icon: IconDefinition;
+    }[];
 };
+
 

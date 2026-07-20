@@ -24,9 +24,9 @@ export default function CareerHistory() {
             },
             visible: {
                 opacity: 1,
-                y: 30,
+                y: 40,
                 transition: {
-                    duration: 7,
+                    duration: 5,
                     ease: "easeIn"
                 }
             }

@@ -15,7 +15,7 @@ export default function Contact() {
                 opacity: 1,
                 y: 30,
                 transition: {
-                    duration: 7,
+                    duration: 5,
                     ease: "easeIn"
                 }
             }

@@ -19,7 +19,7 @@ export default function About_Me({isScrolled}: AboutMeProps) {
                 animate={{opacity: 1, scale: 1}}
                 onAnimationComplete={() => setIsFirstLoad(false)}
                 transition={isFirstLoad ? {
-                    duration: 3,
+                    duration: 2,
                     delay: 3,
                     ease: [0, 0.71, 0.2, 1.01],
 
@@ -53,7 +53,7 @@ export default function About_Me({isScrolled}: AboutMeProps) {
             },
             visible: {
                 opacity: 1,
-                y: 10,
+                y: 0,
                 transition: {
                     duration: 3,
                     ease: "easeOut"
@@ -63,7 +63,7 @@ export default function About_Me({isScrolled}: AboutMeProps) {
         <h2 className='header'
             
         >About Me</h2>
-        <p className='text-experience'>Hi, thanks for stopping by! I'm Chantel, a Frontend Leaning Software Developer. I am some what of a late bloomer to the tech world, starting my dev career 4 years ago learning HTML in my bedroom. I have since completed a bootcamp, and passed a Level 4 Software Development Apprenticeship, as well as working for an exciting Attention Measurement company
+        <p className='text-experience'>Hi, thanks for stopping by! I'm Chantel, a Frontend Leaning Software Developer. I am some what of a latecomer to the tech world, starting my dev career 4 years ago learning HTML in my bedroom. I have since completed a bootcamp, and passed a Level 4 Software Development Apprenticeship, as well as working for an exciting Attention Measurement company
             <br/>
             <br/>
         Today I build intuitive, responsive, and data-driven web applications. My core expertise lies in React, HTML5, and CSS3, coupled with a strong focus on modern development practices and scalable architecture. I am deeply passionate about continuous learning and am actively expanding my full-stack capabilities by integrating TypeScript, Node.js, and Express.js into my workflow. I thrive in collaborative environments where I can partner with cross-functional teams to solve complex problems and deliver high-quality user experiences.

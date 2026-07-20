@@ -14,7 +14,7 @@ export default function Education() {
             },
             visible: {
                 opacity: 1,
-                y: 10,
+                y: 100,
                 transition: {
                     duration: 5,
                     ease: "easeIn"
