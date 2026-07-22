@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCodeFork, faFilm } from "@fortawesome/free-solid-svg-icons";
+import { faChartBar, faCodeFork, faFilm } from "@fortawesome/free-solid-svg-icons";
 import { faCss3Alt, faFigma, faMdb, faNode, faReact, faTypescript } from "@fortawesome/free-brands-svg-icons"
 import type { Project } from "../types/projects";
 
@@ -41,6 +41,7 @@ const PROJECTS_DATA: Project[] = [
             {id: "react", label: "React", type: "icon", icon: faReact},
             {id: "typescript", label: "Typescript", type: "icon", icon: faTypescript},
             {id: "css", label: "CSS", type: "icon", icon: faCss3Alt},
+            {id: "recharts", label: "Recharts", type: "icon", icon: faChartBar},
             {id: "framer", label: "Framer Motion", type: "icon", icon: faFilm},
         ]
     },
