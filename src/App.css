@@ -1,0 +1,640 @@
+/* Portfolio */
+html {
+  scroll-behavior: smooth;
+}
+.Portfolio {
+display: flex;
+align-items: flex-start;
+ max-width: 1260px;
+ margin: 0 auto;
+ gap: 2rem;
+ padding: 1rem;
+}
+
+/************ static section ************/
+
+.static-section {
+  width: 480px;
+  height: calc(100vh - 2rem);
+  position: fixed;
+  background-color: hotpink;
+  top: 1rem;
+  border-radius: 30px;
+}
+.personal-details {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.personal-details h2 {
+  position: relative;
+  left: 10rem;
+}
+.personal-details h1 {
+  color: whitesmoke;
+}
+.personal-details h1, .personal-details h3 {
+  top: 3rem;
+  position: relative;
+  left: 2rem;
+}
+
+#cv-download {
+  color: whitesmoke;
+  top: 7rem;
+  position: relative;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 10px;
+  left: 16rem;
+  border: whitesmoke solid 4px;
+  cursor: pointer;
+}
+
+#buttons {
+  justify-content: space-between;
+  
+}
+button {
+  color: whitesmoke;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 15px;
+  border: whitesmoke solid;
+}
+
+#cv-download:hover, #cv-download:active, button:hover, button:active {
+  background-color: whitesmoke;
+  color: rgb(9, 9, 56);
+}
+
+/*Static section -  Modal */
+#modal-background {
+  background-color: rgba(2, 2, 19, 0.849);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal {
+  margin: 3rem auto;
+  border: whitesmoke solid 2px;
+  background-color: hotpink;
+  border-radius: 10px;
+  padding-bottom: 3rem;
+  
+  
+}
+form {
+  border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+  background-color: hotpink;
+  width: 455px;
+  height: 70vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+input {
+  margin: 0.5rem auto;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.input-wrapper input {
+  width: 95%;
+}
+.name {
+  margin-top: 1rem;
+}
+#buttons {
+  margin: 0 2rem 2rem;
+  display: flex;
+}
+
+form p {
+  margin-bottom: 0;
+  padding: 0 1.5rem ;
+}
+
+.form-actions {
+  margin: 2rem auto 2rem;
+  top: 9rem;
+  position: relative;
+}
+
+.radio-group {
+  margin-top: 1.5rem;
+  height: 3rem;
+}
+.radio-options.specific-roles {
+  height: 1.5rem;
+}
+.radio-group.follow-up {
+  top: 2rem;
+  position: relative;
+  height: 2rem;
+}
+.radio-group.follow-up legend {
+  bottom: 2rem;
+  position: relative;
+  width: 313px;
+}
+
+.radio-options label {
+  display: inline-flex;
+  color: black;
+  margin: 0;
+  width: 20px;
+  padding-right: 4rem;
+}
+.radio-options.follow-up-answers {
+  height: 1.5rem;
+  bottom: 2rem;
+  position: relative;
+}
+label input {
+  bottom: 0.7rem;
+  position: relative;
+  padding-left: 0.5rem;
+}
+.textarea-wrapper {
+  top: 7rem;
+  position: relative;
+}
+textarea {
+  height: 100px;
+  margin: 1rem 1rem;
+  
+}
+
+.modal-content.text-center {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+.confirmation-form-actions {
+  top: 3rem;
+  position: relative;
+  width: 500px;
+  margin: 0 auto 2rem;
+  right: 5rem;
+}
+
+/* Social buttons */
+#socials {
+  display: flex;
+  list-style: none;
+  width: 100px;
+  bottom: 1rem;
+  position: absolute;
+  border: black 4px solid;
+  border-radius: 10px;
+  padding: .5rem;
+  font-size: 2rem;
+  left: 3rem;
+  justify-content: space-around;
+}
+#socials svg, h4 a {
+  color: black;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+/*********** scroll section *******************/
+.scroll-section {
+  max-width: 60%;
+  height: 100vh;
+  display:grid;
+  position: absolute;
+  left: 35rem;
+}
+
+/* nav bar */
+.nav-bar-container {
+  width: 700px;
+  background-color: whitesmoke;
+  margin: -0.5rem auto;
+  position: fixed;
+  z-index: 100;
+  box-shadow: whitesmoke 0px 20px 40px 10px;
+  top: 0.5rem;
+  right: -35px;
+}
+.nav-bar-contents {
+  justify-content: space-evenly ;
+  display: flex;
+  list-style: none;
+  padding: 0.5rem ;
+  margin: 0;
+  gap: 1.5rem
+}
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+.icon {
+  font-size: 25px;
+}
+
+.nav-avatar {
+  width: 1.5rem;
+  border-radius: 50%;
+  border: hotpink inset 3.5px;
+}
+.tooltip-wrap {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+  text-align: center;
+}
+.tooltip-text {
+  background-color: whitesmoke;
+  color: rgb(161, 19, 90);
+  font-weight: 300;
+  font-size: 15px;
+  width: 80px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  pointer-events: none;
+}
+.nav-link:hover .tooltip-text,
+.nav-link:focus-visible .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  
+}
+.nav-link svg, .nav-link .nav-avatar {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.nav-link:hover svg, .nav-link:hover .nav-avatar {
+  transform: scale(1.05);
+  color: hotpink;
+}
+/* image animation*/
+.profile-img{
+  top: 9rem;
+  position: relative;
+  width: fit-content;
+   margin: 0 auto;
+}
+#main-Img {
+  width: 350px;
+  border-radius: 50%;
+  border: hotpink inset 8px;
+  overflow-anchor: 'none';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+motion.img {
+  width: 300px;
+  height: 300px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/*  about me  */
+.header, .sub-title, .company, .project-details, .tech-icons{
+  top: 14rem;
+  text-align: end;
+  position: relative;
+}
+.header {
+  color: hotpink;
+ left: 3rem;
+}
+.sub-title, .company {
+  left: 2.5rem;
+}
+.text-experience {
+  top: 14rem;
+  text-align: justify;
+  position: relative;
+  width: 500px;
+  left: 9rem;
+  line-height: 1.5;
+}
+.text {
+  text-align: justify;
+  position: relative;
+  width: 500px;
+  left: 9rem;
+  line-height: 1.5;
+}
+
+/* Experience */
+
+.tech {
+  width: 445px;
+  margin: 1rem 0 2rem;
+  position: relative;
+  justify-content: space-evenly;
+  top: 14rem;
+  display: flex;
+  list-style: none;
+  left: 13rem;
+}
+.project-tech {
+  top: 0rem
+}
+.tech li {
+  border: solid hotpink;
+  padding: 0.5rem;
+  border-radius: 50px;
+  font-size: x-large;
+}
+.tech .tooltip-text {
+  color: black;
+}
+
+/* Projects */
+.title-wrap {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin: 4rem auto 1.5rem;
+  width: 600px;
+  left: 2rem;
+}
+.github-repo {
+  color: hotpink;
+  border: hotpink solid 4px;
+  margin-left: 1rem;
+    height: 50px;
+    top: 1rem;
+    position: relative;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    width: 70px;
+    cursor: pointer;
+}
+.project-details {
+  margin-bottom: 2rem;
+}
+.project-images {
+  display: flex;
+  justify-content: space-around;
+  width: 510px;
+  left: 10rem;
+  position: relative;
+}
+.project-img {
+  width: 100px;
+  height: 80px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+.lightbox-img {
+  z-index: 2000;
+  position: relative;
+  bottom: 69rem;
+  right: 20rem;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.562);
+}
+
+/* contact */
+.contact {
+  margin: 4rem auto;
+  top: 20rem;
+  width: 570px;
+  left: 3rem;
+  position: relative;
+}
+.contact h2 {
+  text-align: end;
+}
+.contact-wrapper {
+  padding: 2rem;
+  text-align: center;
+}
+.contact-wrapper h1 {
+  color: hotpink;
+}
+.contact-wrapper p {
+  padding: 2rem 6rem;
+}
+.contact-wrapper a {
+  color: hotpink;
+}
+
+/* **************** responsive ********************** */
+@media only screen and (min-width: 2000px) {
+  .scroll-section {
+    left: 53rem;
+  }
+  
+}
+
+@media only screen and (min-width: 1800px) {
+  .scroll-section {
+    left: 46rem;
+  }
+  .resume {
+    width: 595px;
+  }
+  
+}
+@media only screen and (min-width: 1600px) {
+  .nav-bar-container {
+    right: 13rem;
+  }
+  .resume {
+    left: 14rem;
+    position: relative;
+    width: 600px;
+  }
+  
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1599px) {
+  .nav-bar-container {
+    width: 593px;
+    margin-left: 10rem;
+  }
+  .resume {
+    left: 7rem;
+    position: relative;
+  }
+  
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .static-section {
+    max-width: 762px;
+  }
+  .personal-details h2 {
+    width: 450px;
+  }
+  /* #socials {
+    top: 50vh;
+  } */
+  .scroll-section {
+    width: 850px;
+    right: 0;
+  }
+  .nav-bar-container {
+    width: 650px;
+    margin-left: 5.5rem;
+  }
+  .header, .sub-title, .company, .project-details, .tech-icons, .contact {
+    right: 5rem;
+    width: 660px;
+  }
+  .text-experience {
+    left: 10rem;
+  }
+  .tech {
+    width: 415px;
+  }
+  .title-wrap {
+    width: 626px;
+    right: 0;
+  }
+  .project-images {
+    left: 10rem;
+  }
+  .text {
+    left: 8rem;
+  }
+  .tech.project-tech {
+    left: 8rem;
+  }
+  .contact-wrapper {
+    width: 530px;
+    position: relative;
+    left: 5rem;
+  }
+}
+
+/* @media only screen and (min-width: 651px)  {
+  #socials {
+    top: 16vh;
+  }
+} */
+
+@media only screen and (max-width: 950px) {
+  .static-section {
+    position: absolute;
+    top: 8rem;
+    height: 600px;
+  }
+  
+  .scroll-section {
+    left: 0;
+    top: -11rem;
+  }
+  .nav-bar-container {
+    width: 100%;
+  }
+  .resume {
+    max-width: 650px;
+    top: 37rem;
+    position: absolute;
+  }
+  .profile-img {
+    top: 18rem;
+    left: 6rem;
+  }
+  .header, .sub-title, .company, .project-details, .tech-icons {
+    text-align: justify;
+    width: 100%;
+  }
+  .company, .sub-title, .header {
+    left: 2rem;
+  }
+  .text-experience, .text {
+    left: 0;
+    width: 95%;
+    font-size: x-large;
+    padding: 0 2rem;
+  }
+ 
+  .company {
+    font-size: x-large;
+  }
+  .tech {
+    width: 100%;
+    left: 0;
+    padding-top: 1rem;
+  }
+  .tech li {
+    font-size: xxx-large;
+    
+  }
+
+  .project-details{
+    width: 100%;
+    left: 0;
+    padding: 0
+  }
+  .title-wrap {
+    flex-direction: column;
+    align-items: center;
+    left: 1rem
+  }
+  .github-repo {
+    width: 118px;
+    font-size: 2rem;
+    padding: .5rem;
+  }
+  .title-wrap h1 {
+    text-align: center;
+  }
+  .project-images {
+    flex-direction: column;
+    left: 2.5rem;
+  }
+  .project-img {
+    width: 100%;
+    height: 320px;
+    padding: 1rem;
+  }
+  .contact {
+    width: 100%;
+    text-align: justify;
+    padding: 0;
+    left: 2rem;
+  }
+  .contact h2 {
+    text-align: center;
+  }
+  .contact p, .contact h3{
+    font-size: xx-large;
+    padding: 0;
+  }
+}
