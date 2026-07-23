@@ -195,8 +195,8 @@ textarea {
   display: flex;
   list-style: none;
   width: 100px;
-  top: 11rem;
-  position: relative;
+  bottom: 1rem;
+  position: absolute;
   border: black 4px solid;
   border-radius: 10px;
   padding: .5rem;
@@ -228,6 +228,7 @@ textarea {
   z-index: 100;
   box-shadow: whitesmoke 0px 20px 40px 10px;
   top: 0.5rem;
+  right: -35px;
 }
 .nav-bar-contents {
   justify-content: space-evenly ;
@@ -313,18 +314,17 @@ motion.img {
 }
 
 /*  about me  */
-.header, .sub-title, .company, .project-details, .tech-icons, .contact {
+.header, .sub-title, .company, .project-details, .tech-icons{
   top: 14rem;
   text-align: end;
   position: relative;
-  padding: 0 5rem;
 }
 .header {
   color: hotpink;
-  right: 2rem;
+ left: 3rem;
 }
 .sub-title, .company {
-  right: 4rem;
+  left: 2.5rem;
 }
 .text-experience {
   top: 14rem;
@@ -335,29 +335,27 @@ motion.img {
   line-height: 1.5;
 }
 .text {
-  line-height: 25px;
-  position: relative;
-  top: 2rem;
-  padding: 0 1.5rem;
   text-align: justify;
+  position: relative;
   width: 500px;
-  left: 3rem;
+  left: 9rem;
+  line-height: 1.5;
 }
 
 /* Experience */
 
 .tech {
-  width: 500px;
-  margin: 1rem auto 2rem;
+  width: 445px;
+  margin: 1rem 0 2rem;
   position: relative;
   justify-content: space-evenly;
   top: 14rem;
   display: flex;
   list-style: none;
-  left: 3rem;
+  left: 13rem;
 }
 .project-tech {
-  top: 2rem
+  top: 0rem
 }
 .tech li {
   border: solid hotpink;
@@ -371,11 +369,12 @@ motion.img {
 
 /* Projects */
 .title-wrap {
-  right: 2rem;
   position: relative;
   display: flex;
   justify-content: flex-end;
   margin: 4rem auto 1.5rem;
+  width: 600px;
+  left: 2rem;
 }
 .github-repo {
   color: hotpink;
@@ -396,7 +395,7 @@ motion.img {
   display: flex;
   justify-content: space-around;
   width: 510px;
-  left: 5rem;
+  left: 10rem;
   position: relative;
 }
 .project-img {
@@ -432,7 +431,13 @@ motion.img {
 /* contact */
 .contact {
   margin: 4rem auto;
-  top: 20rem
+  top: 20rem;
+  width: 570px;
+  left: 3rem;
+  position: relative;
+}
+.contact h2 {
+  text-align: end;
 }
 .contact-wrapper {
   padding: 2rem;
@@ -453,21 +458,28 @@ motion.img {
   .scroll-section {
     left: 53rem;
   }
+  
 }
+
 @media only screen and (min-width: 1800px) {
   .scroll-section {
     left: 46rem;
   }
+  .resume {
+    width: 595px;
+  }
+  
 }
 @media only screen and (min-width: 1600px) {
   .nav-bar-container {
-    margin-left: 12rem;
+    right: 13rem;
   }
   .resume {
     left: 14rem;
     position: relative;
-    width: 780px;
+    width: 600px;
   }
+  
 }
 
 @media only screen and (min-width: 1500px) and (max-width: 1599px) {
@@ -488,9 +500,9 @@ motion.img {
   .personal-details h2 {
     width: 450px;
   }
-  #socials {
+  /* #socials {
     top: 50vh;
-  }
+  } */
   .scroll-section {
     width: 850px;
     right: 0;
@@ -529,18 +541,19 @@ motion.img {
   }
 }
 
-@media only screen and (min-width: 651px)  {
+/* @media only screen and (min-width: 651px)  {
   #socials {
-    top: 50vh;
+    top: 16vh;
   }
-}
+} */
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 950px) {
   .static-section {
     position: absolute;
     top: 8rem;
     height: 600px;
   }
+  
   .scroll-section {
     left: 0;
     top: -11rem;
@@ -559,8 +572,10 @@ motion.img {
   }
   .header, .sub-title, .company, .project-details, .tech-icons {
     text-align: justify;
-    left: -4rem;
     width: 100%;
+  }
+  .company, .sub-title, .header {
+    left: 2rem;
   }
   .text-experience, .text {
     left: 0;
@@ -568,13 +583,12 @@ motion.img {
     font-size: x-large;
     padding: 0 2rem;
   }
-  .sub-title, .company {
-    left: -3rem;
-  }
+ 
   .company {
     font-size: x-large;
   }
   .tech {
+    width: 100%;
     left: 0;
     padding-top: 1rem;
   }
@@ -591,7 +605,7 @@ motion.img {
   .title-wrap {
     flex-direction: column;
     align-items: center;
-    left: 3rem
+    left: 1rem
   }
   .github-repo {
     width: 118px;
@@ -615,6 +629,9 @@ motion.img {
     text-align: justify;
     padding: 0;
     left: 2rem;
+  }
+  .contact h2 {
+    text-align: center;
   }
   .contact p, .contact h3{
     font-size: xx-large;
